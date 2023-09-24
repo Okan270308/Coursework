@@ -1,0 +1,484 @@
+* {
+    padding: 0;
+    margin: 0;
+   
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap');
+@font-face{ 
+    font-family: Dela Gothic One ;
+    src: url(/fonds/DelaGothicOne-Regular.woff) format("woff");
+    font-weight: bold;
+}  
+.wrapper{
+    height: 100%;  
+}
+.content{
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;   
+}
+/* Навігаційна панель */
+.nav__navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-top: 40px; 
+    position: relative;
+}
+.navbar-burger__img{
+    display:none;    
+}
+
+.navbar-link a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    padding-right: 30px;    
+}
+.red {
+   color: red;
+}
+
+.navbar-link a:hover {
+    color: red; 
+    font-weight: 700;
+} 
+.navbar-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+.select-lg, .select-currency{
+    border: none;
+    font-size: 20px;
+    padding-left: 20px;
+} 
+.info-tel a{
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.basket{
+    display: flex;
+   
+    cursor: pointer;
+    position: relative;
+}
+.basket-imd{
+    position: absolute;
+    top: 22px;
+    left: 22px;    
+}
+.basket-imd1{
+    display: block;
+    position: absolute;
+   
+    top: 24px;
+    left: 26px;
+}
+.info-search{
+    display: flex;
+}
+.search-btn{
+    display: inline-block;
+    position: relative;    
+}
+.search{
+    border: none;
+    padding-left: 20px; 
+    background: white;
+    cursor: pointer;   
+}
+.nav__page{
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 166.4%; 
+    margin-top: 10px;
+}
+.page__first, .page__friend, .page__friend {
+    display: flex;    
+}
+.page__first  img, .page__friend img{
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 10px;  
+}
+.page__third {
+    font-weight: 400;
+}
+.basket-imd1{
+   
+}
+@media (max-width: 1290px){
+    .nav__navbar{
+        margin-left: 5px;
+    }
+    .nav__page{
+        margin-left: 5px;
+    }
+}
+@media (max-width: 1024px){
+    .content{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navbar-link, .info-tel, .info-select {
+        display: none;
+    }
+     .navbar-burger li{
+        list-style: none;
+    }
+    .navbar-burger a{
+       text-decoration: none;
+       color: black;
+    }
+
+    .navbar-burger__img{
+        display: block;
+        
+        
+    }
+    .navbar-burger li{
+        position: relative;
+    }
+    .navbar-burger__img >li:hover .navbar-burger__li{
+        display: block;
+       
+    }
+    .navbar-burger__li{
+        display: none;
+        position: absolute;
+        top: 50px;
+        width: 100PX; 
+    } 
+
+    .nav__page{
+        display: none;
+    }
+}
+@media (max-width: 320px){
+   .info-search{
+    display: flex;
+   } 
+   .search{
+    padding-left: 0px;    
+    }
+}
+
+/* Основний контент */
+.aside {
+    max-width: 100px;
+}
+.size-text, .color-text, .season, .cloth, .sleeve{
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 166.4%;
+    margin-top: 15px;   
+}
+.size-text{
+    margin-top: 40px; 
+}
+.size-text1, .color-text1 {
+   margin-right: 5px;
+}
+.size-input, .color-input input+label {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 19.968px;
+    margin-bottom: 10px;
+}
+.season__img, .cloth__img, .sleeve__img{
+    margin-left: 5px;
+}
+input, label{
+    margin-top: 15px;
+}
+
+.maine-content{
+    display: flex;    
+}
+.main-top{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 20px;
+    margin-left: 144px;
+}
+.main-top__select{
+ display: flex;
+}
+.select__img, .select__text{
+    margin-right: 15px;
+}
+.select__img {
+    margin-top: 5px; 
+}
+.main-top__select-adapt{
+    display: none;
+}
+
+h1{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 36px;
+    line-height: 50.508px; 
+    text-transform: uppercase;
+  
+} 
+.img-1-2, .img-3-4, .img-5-6 {
+    display: flex;
+    margin-left: 135px;
+    margin-top: 50px;
+}
+.text-1-2-3-4-5-6{
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23.266px;
+    margin-top: 10px;
+}
+.priсe{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 23.268px; 
+}
+.one{
+    margin-right: 30px;
+}
+.more-bottom{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 65px;
+    margin-bottom: 40px;
+}
+
+.bottom{
+    margin-left: 290px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.more{
+    display: flex;
+}
+.more__link {
+    display: inline;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.bottom a:hover{
+    color: #B0B0B0;
+
+}
+@media (max-width: 1290px){
+    .aside{
+        display: none;
+    }
+
+    .main-top__select{
+        display: none;
+    }
+    .main-top{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: 0;
+        margin-top: 40px;
+       
+    }
+    .top{
+        text-align: end;
+    }
+    .main-top__select-adapt{
+        display: flex; 
+        justify-content: space-between;   
+        margin-top: 20px;
+    } 
+    .size-text1,.select__text{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19.968px; 
+        margin-right: 5px;
+       
+    }
+    .select-adapt, .main-top__select-2{
+        display: flex;
+    }
+    .size-text{
+        margin-top: 0;
+        margin-right: 20px;
+    }
+
+    .img-1-2, .img-3-4, .img-5-6 {
+        margin-left: 10px; 
+    }   
+}
+@media (max-width: 1060px){
+    .one{
+        margin-right: 5px;
+    }
+} 
+@media (max-width: 1024px){
+    .main__img img{
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px){
+    .bottom{
+        display: none;
+    }
+    h1{
+        font-size: 25px;
+    }
+  
+} 
+@media (max-width: 425px){
+    h1{
+        font-size: 16px;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+/* Підвал */
+.footer{
+    background:#F4F4F4;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+.footer-logo, .footer-vector{
+    max-width: 160px;
+    margin: 40px auto 0;
+    text-align: center;
+
+}
+
+.footer-vector img{
+  position: relative;
+  top: -40px;
+   
+  
+
+}
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+.footer-info a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 166.188%; 
+    color: black;
+}
+.footer-info a:hover{
+    color: red;   
+}
+.footer-info li{
+    list-style: none;
+    margin-bottom: 10px;    
+}
+.about-us-information{
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+    
+}
+.red, .ed {
+    font-weight: 700;
+    margin-top: 40px;
+    color: red; 
+}
+.contacts__contact, .networks__networks {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.contacts__tel, .contacts__add, .contacts__text, .networks__networks {
+    padding-bottom: 20px;
+}
+.networks__marking a{
+    display:inline-block;
+}
+.marking__text{
+    padding-top: 30px;
+}
+.contacts__text-text{
+    display: none;
+}
+@media (max-width: 768px){
+    .footer-info{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contacts{
+        order: 4;
+    }
+    .about-us-information{
+        gap: 15px     
+    }
+    .networks__marking{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .marking__text{
+        display: none;
+    }
+    .contacts__text-text{
+        display: block;   
+    }
+}
+
+@media (max-width: 376px){
+    .networks__marking{
+        max-width: 85px;
+        margin-right: 5px;
+    }
+    .networks__link{
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+    .marking__text{
+       margin-top: 20px; 
+    }
+}
+@media (max-width: 320px){
+    .contacts__contact{
+        margin-top: 20px;
+    }
+    .contacts__text-text{
+        margin-top: 20px;
+    }
+
+}
