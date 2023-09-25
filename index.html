@@ -17,21 +17,31 @@
               <a href="#" target="_blank">Блог</a>
               <a href="#" target="_blank">Про нас</a>
             </div>
-            <div class="navbar-burger">
-              <ul class="navbar-burger__img">
-                <li class="burger__img"> <img src="img/svg/burger.png" alt="burger" height="30px" width="30px">
-                  <ul class="navbar-burger__li">
-                    <li><a href="#" class="red">Каталог</a> </li>
-                    <li> <a href="#" target="_blank">Знижки</a></li>
-                    <li><a href="#" target="_blank">Блог</a></li>
-                    <li><a href="#" target="_blank">Про нас</a></li>
-                  </ul>
-                </li>
+            <div class="hamburger-menu">
+              <input id="menu__toggle" type="checkbox" />
+              <label class="menu__btn" for="menu__toggle">
+                <span></span>
+              </label>
+              <ul class="menu__box">
+                <li class="menu__logo"><img src="/img/svg/etnodim-logo-main-removebg-preview 1.svg" alt="#"></li>
+                <li><a class="menu__item menu-item1" href="#">Каталог <img  class="menu-item1-img" src="img/svg/scroll down.svg" alt=""></a></li>
+                <li><a class="menu__item" href="#">Знижки</a></li>
+                <li><a class="menu__item" href="#">Блог</a></li>
+                <li><a class="menu__item" href="#">Про нас</a></li>
+                <div class="menu__2">
+                   <a href="#" class="menu__2"> <img src="img/svg/UA.svg" alt=""></a>
+                   <a href="#"  class="menu__2"> <img src="img/svg/RU.svg" alt="#"></a>
+                  <a href="#" class="menu__2"><img src="img/svg/EN.svg" alt=""></a>
+                   <a href="#" class="menu__2"><img src="img/svg/Rectangle 231.svg" alt="#"></a>
+                   <a href="#" class="menu__2"> <img src="img/svg/noun_Hryvnia_248776 1.svg" alt="#"></a>
+                   <a href="#" class="menu__2"> <img src="img/svg/ph_currency-dollar-light.svg" alt=""></a>
+                   <a href="#" class="menu__2"> <img src="img/svg/clarity_euro-line.svg " alt=""></a>
+                </div>
               </ul>
             </div>
             <div class="navbar-logo">
               <img
-                src="img/svg/etnodim-logo-main-removebg-preview 1.png"
+                src="img/svg/etnodim-logo-main-removebg-preview 1.svg"
                 alt="Logo"
               />
             </div>
@@ -189,13 +199,15 @@
                <div class="select__text"> новинки</div>
                <div class="select__img"><img src="/img/svg/Vector 13.svg" alt="#"></div>
               </div>
-              <!-- мої проби -->
               <div class="main-top__select-adapt">
                 <div class="select-adapt">
                   <div class="size-text">
                     <div class="size-text1"><p>Фільтри</p></div>
                     <img src="img/svg/Vector 10.svg" alt="#">
                   </div>
+                <div class=" select-adapt_ch">
+
+                </div>
                 </div>
                 <div class="main-top__select-2">
                   <div  class="select__text"> Сортувати за:</div>
@@ -271,7 +283,7 @@
           <img class="footer-vector" src="img/svg/Vector 20.png" alt="#">
         </div>
         <div class="footer-logo"> <img
-          src="img/svg/etnodim-logo-main-removebg-preview 1.png"
+          src="img/svg/etnodim-logo-main-removebg-preview 1.svg"
           alt="Logo"/>
         </div>
         <div class="footer-info">
@@ -316,9 +328,9 @@
             <div  class="contacts__tel">
               <a href="tel:+38 097 888 92 9"> +38 097 888 92 92</a>
             </div>
-            <address class="contacts__add">
+            <p class="contacts__add">
               Україна, м. Київ, вул. Верхній Вал 58/28
-            </address>
+            </p>
             <p class="contacts__text">
               пн-пт 10:00-20:00    сб-нд 11:00-19:00
             </p>
