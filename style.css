@@ -85,15 +85,12 @@ img{
 .select-lg, .select-currency{
     border: none;
     font-size: 20px;
-    padding-left: 20px;
     color: #413b3b;
 } 
 .info-tel a{
     text-decoration: none;
     padding-left: 20px;
-    font-size: 20px;
-   
-    
+    font-size: 20px;    
 }
 .basket{
     display: flex;
@@ -166,29 +163,29 @@ img{
     }
     #menu__toggle {
         opacity: 0;
-      }
+    }
       
-      #menu__toggle:checked ~ .menu__btn > span {
+    #menu__toggle:checked ~ .menu__btn > span {
         transform: rotate(45deg);
-      }
-      #menu__toggle:checked ~ .menu__btn > span::before {
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
         top:0;
         transform: rotate(0);
-      }
-      #menu__toggle:checked ~ .menu__btn > span::after {
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
         top: 0;
         transform: rotate(90deg);
-      }
-      #menu__toggle:checked ~ .menu__box {
+    }
+    #menu__toggle:checked ~ .menu__box {
         visibility: visible;
         left: 0;
-      }
-      #menu__toggle:checked ~ .menu__box{
+    }
+    #menu__toggle:checked ~ .menu__box{
         visibility: visible;
         left: 0;
-      }
+    }
      
-      .menu__btn {
+    .menu__btn {
         display: flex;
         align-items: center;
         position: relative;
@@ -200,11 +197,11 @@ img{
       
         cursor: pointer;
         z-index: 2;
-      }
+    }
       
-      .menu__btn > span,
-      .menu__btn > span::before,
-      .menu__btn > span::after {
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
         display: block;
         position: absolute;
       
@@ -214,17 +211,17 @@ img{
         background-color: #121111;
       
         transition-duration: .25s;
-      }
-      .menu__btn > span::before {
+    }
+    .menu__btn > span::before {
         content: '';
         top: -8px;
-      }
+    }
       .menu__btn > span::after {
         content: '';
         top: 8px;
-      }
+    }
       
-      .menu__box {
+    .menu__box {
         display: block;
         position: absolute;
         visibility: hidden;
@@ -239,9 +236,9 @@ img{
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
         transition-duration: .25s;
         z-index: 1;
-      }
+    }
       
-      .menu__item {
+    .menu__item {
         display: block;
         padding: 12px 24px;
       
@@ -253,29 +250,28 @@ img{
         text-transform: uppercase;
         transition-duration: .25s;
         margin-top: 30px;
-      }
-      .menu__item:hover {
+    }
+    .menu__item:hover {
         background-color: #CFD8DC;
-      }
-      .menu__logo{
+    }
+    .menu__logo{
         position: absolute;
         top: 20px;
         left: 70px;
-      }
+    }
       .menu-item1{
         display: flex;
         color: red;
-    
-      }
-      .menu-item1-img{
+    }
+    .menu-item1-img{
         margin-left: 10px;
-      }
-      .menu__2 {
+    }
+    .menu__2 {
         display: inline-block;
         padding-left: 12px;
         margin-top: 30px;
         margin-bottom: 20px;
-      }
+    }
     .nav__page{
         display: none;
     }
@@ -304,7 +300,7 @@ img{
 }
 .size-text{
     margin-top: 40px; 
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 .size-text1, .color-text1 {
    margin-right: 5px;
@@ -401,11 +397,16 @@ h1{
     color: #B0B0B0;
 
 }
+.menu-aside{
+    display: none;
+}
 @media (max-width: 1290px){
     .aside{
         display: none;
+    } 
+    .main{
+        margin: auto;
     }
-
     .main-top__select{
         display: none;
     }
@@ -415,7 +416,7 @@ h1{
         align-items: stretch;
         margin-left: 0;
         margin-top: 40px;
-       
+        max-width: 1400px;
     }
     .top{
         text-align: end;
@@ -439,6 +440,74 @@ h1{
         margin-top: 0;
         margin-right: 20px;
     }
+    /* Мої проби */
+    
+    .check{
+        display: none;
+        
+     }
+     
+     
+     .ch {
+         font-size: 16px;
+         margin-left: 10px;
+         font-weight: 300;
+         margin-top: 0;
+     }
+ 
+     .ch::after {
+         content:'^';
+         margin-left: 5px;
+         margin-top: 20px;
+        
+            
+     }
+     .check:checked ~ .menu-aside {
+        display: flex;
+        flex-direction: row;
+     }
+     .menu-aside {
+         position: absolute;
+         width: 320px;
+         top: 260px;
+         left: 20px;
+         background-color:  #FFF;;
+         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+         padding-left: 16px;
+        
+     }
+     .menu-aside-1, .menu-aside-2{
+         margin-right: 30px;
+         display: flex;
+         flex-direction: column;
+ 
+     }
+     .sleeve__text-1, .cloth__text-1, .season__text-1, .color-text1-1, .size-text1-1{
+         font-size: 14px;
+         font-size: 700;
+         display: flex;
+         flex-direction: column;
+         
+     }
+ 
+     .season-1, .cloth-1, .sleeve-1{
+         display: flex;
+         flex-direction: column;
+     }
+     
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
     .img-1-2, .img-3-4, .img-5-6 {
         margin-left: 10px; 
@@ -447,12 +516,12 @@ h1{
 @media (max-width: 1060px){
     .one{
         margin-right: 5px;
-    }
+    }  
 } 
 @media (max-width: 1024px){
     .main__img img{
-        width: 95%;
-    }
+        max-width: 95%;
+    } 
 }
 
 @media (max-width: 768px){
@@ -469,16 +538,12 @@ h1{
         font-size: 16px;
     }
 } 
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 320px){
+   .size-text1,.select__text{
+    margin-right: 5px;
+    font-size: 12px;
+   }
+} 
 
 /* Підвал */
 .footer{
@@ -568,7 +633,10 @@ h1{
         display: block;   
     }
 }
+@media (max-width: 660px){
+   
 
+    }
 @media (max-width: 376px){
     .networks__marking{
         max-width: 85px;
